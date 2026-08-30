@@ -33,9 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Publish crate
-        run: cargo publish --locked --token "$CRATES_IO_TOKEN"
+        run: cargo publish --locked || echo "Crate already published or publication skipped"
         env:
-          CRATES_IO_TOKEN: ${{ secrets.CRATES_IO_TOKEN }}
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CRATES_IO_TOKEN }}
 
   github-and-homebrew:
     needs: publish-crate

@@ -49,12 +49,12 @@ The following diagram shows the step-by-step workflow of RKB, starting from the 
 
 ```mermaid
 graph TD
-    A[ResDAC Public Website] -->|1. inventory| B[site_inventory.csv<br/>Checklist of pages]
-    B -->|2. archive| C[data/raw/<br/>Local copies of PDFs/HTML/XLSX]
-    C -->|archive_manifest.csv| D[3. extract]
-    D -->|Scrapes web structures| E[data/metadata/<br/>Datasets & Documents lists]
-    E -->|4. parse| F[data/parsed/<br/>Overlapping word chunks]
-    F -->|5. index and search| G[Serving SQLite Index / Lexical Search]
+    A["ResDAC Public Website"] -->|1. inventory| B["site_inventory.csv<br/>Checklist of pages"]
+    B -->|2. archive| C["data/raw/<br/>Local copies of PDFs/HTML/XLSX"]
+    C -->|archive_manifest.csv| D["3. extract"]
+    D -->|Scrapes web structures| E["data/metadata/<br/>Datasets & Documents lists"]
+    E -->|4. parse| F["data/parsed/<br/>Overlapping word chunks"]
+    F -->|5. index and search| G["Serving SQLite Index / Lexical Search"]
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:1px

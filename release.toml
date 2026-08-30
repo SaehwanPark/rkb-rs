@@ -1,19 +1,19 @@
 [project]
-package = "rkb-rust"
+package = "rkb-rs"
 binary = "rkb"
 github_owner = "SaehwanPark"
-github_repo = "rkb-rust"
-repository = "https://github.com/SaehwanPark/rkb-rust"
+github_repo = "rkb-rs"
+repository = "https://github.com/SaehwanPark/rkb-rs"
 tag_prefix = "v"
 
 [crates_io]
-install = "cargo install rkb-rust"
+install = "cargo install rkb-rs"
 publish_command = "cargo publish --locked"
 
 [homebrew]
 tap = "SaehwanPark/homebrew-tap"
-formula = "rkb-rust"
-install = "brew install SaehwanPark/tap/rkb-rust"
+formula = "rkb-rs"
+install = "brew install SaehwanPark/tap/rkb-rs"
 
 [package]
 deny_prefixes = [

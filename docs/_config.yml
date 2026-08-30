@@ -1,0 +1,15 @@
+title: "rkb-rs"
+tagline: "ResDAC & CMS Knowledge Base in Rust"
+description: "High-performance, citation-backed documentation archiver, parser, retrieval engine, and MCP server for CMS/ResDAC health data."
+baseurl: "/rkb-rs"
+url: "https://saehwanpark.github.io"
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

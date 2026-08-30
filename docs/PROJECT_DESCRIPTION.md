@@ -1,6 +1,6 @@
-# RKB Rust
+# rkb-rs
 
-`rkb-rust` installs the `rkb` command-line tool for building a local,
+`rkb-rs` installs the `rkb` command-line tool for building a local,
 traceable knowledge base from public ResDAC and CMS documentation.
 
 RKB is for researchers, analysts, and software agents who need to preserve
@@ -14,13 +14,13 @@ information.
 Install from crates.io:
 
 ```bash
-cargo install rkb-rust
+cargo install rkb-rs
 ```
 
 Install from the Homebrew tap:
 
 ```bash
-brew install SaehwanPark/tap/rkb-rust
+brew install SaehwanPark/tap/rkb-rs
 ```
 
 Both installation methods provide the same executable:
@@ -70,10 +70,11 @@ public documentation.
 
 ## More Documentation
 
-- Project repository: <https://github.com/SaehwanPark/rkb-rust>
-- User manual: <https://github.com/SaehwanPark/rkb-rust/blob/main/docs/USER_MANUAL.md>
-- Architecture notes: <https://github.com/SaehwanPark/rkb-rust/blob/main/ARCHITECTURE.md>
-- Changelog: <https://github.com/SaehwanPark/rkb-rust/blob/main/CHANGELOG.md>
-- Release runbook: <https://github.com/SaehwanPark/rkb-rust/blob/main/docs/RELEASE.md>
-- License: <https://github.com/SaehwanPark/rkb-rust/blob/main/LICENSE>
-- Issues: <https://github.com/SaehwanPark/rkb-rust/issues>
+- Documentation Portal: <https://saehwanpark.github.io/rkb-rs/>
+- Project repository: <https://github.com/SaehwanPark/rkb-rs>
+- User manual: <https://github.com/SaehwanPark/rkb-rs/blob/main/docs/USER_MANUAL.md>
+- Architecture notes: <https://github.com/SaehwanPark/rkb-rs/blob/main/ARCHITECTURE.md>
+- Changelog: <https://github.com/SaehwanPark/rkb-rs/blob/main/CHANGELOG.md>
+- Release runbook: <https://github.com/SaehwanPark/rkb-rs/blob/main/docs/RELEASE.md>
+- License: <https://github.com/SaehwanPark/rkb-rs/blob/main/LICENSE>
+- Issues: <https://github.com/SaehwanPark/rkb-rs/issues>

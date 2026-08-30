@@ -6,22 +6,22 @@ maintainer approval.
 
 ## Configuration
 
-Release-specific values live in [`release.toml`](https://github.com/SaehwanPark/rkb-rust/blob/main/release.toml).
-Cargo package metadata remains in [`Cargo.toml`](https://github.com/SaehwanPark/rkb-rust/blob/main/Cargo.toml).
+Release-specific values live in [`release.toml`](https://github.com/SaehwanPark/rkb-rs/blob/main/release.toml).
+Cargo package metadata remains in [`Cargo.toml`](https://github.com/SaehwanPark/rkb-rs/blob/main/Cargo.toml).
 
 Current distribution targets:
 
-- crates.io package: `rkb-rust`
+- crates.io package: `rkb-rs`
 - installed binary: `rkb`
-- repository: <https://github.com/SaehwanPark/rkb-rust>
+- repository: <https://github.com/SaehwanPark/rkb-rs>
 - Homebrew tap: `SaehwanPark/homebrew-tap`
-- Homebrew install command: `brew install SaehwanPark/tap/rkb-rust`
+- Homebrew install command: `brew install SaehwanPark/tap/rkb-rs`
 
 ## Required Secrets
 
 Add these GitHub Actions secrets to the project repository before publishing:
 
-- `CRATES_IO_TOKEN`: crates.io API token allowed to publish `rkb-rust`.
+- `CRATES_IO_TOKEN`: crates.io API token allowed to publish `rkb-rs`.
 - `HOMEBREW_TAP_TOKEN`: GitHub token with write access to
   `SaehwanPark/homebrew-tap`.
 
@@ -52,7 +52,7 @@ scripts/release-plan --build
 ## Package Contents
 
 The Cargo package uses an explicit allowlist in
-[`Cargo.toml`](https://github.com/SaehwanPark/rkb-rust/blob/main/Cargo.toml).
+[`Cargo.toml`](https://github.com/SaehwanPark/rkb-rs/blob/main/Cargo.toml).
 Before publishing, confirm `scripts/release-package` does not include archived
 runtime data such as `data/`, `manifests/`, `_workspace/`, `.agents/`, or
 `target/`.
@@ -76,15 +76,16 @@ Homebrew tap.
 Verify both public install paths:
 
 ```bash
-cargo install rkb-rust
+cargo install rkb-rs
 rkb --version
-brew install SaehwanPark/tap/rkb-rust
+brew install SaehwanPark/tap/rkb-rs
 rkb --version
 ```
 
 Confirm the package pages and release notes link to:
 
-- <https://github.com/SaehwanPark/rkb-rust>
-- <https://github.com/SaehwanPark/rkb-rust/blob/main/docs/PROJECT_DESCRIPTION.md>
-- <https://github.com/SaehwanPark/rkb-rust/blob/main/docs/USER_MANUAL.md>
-- <https://github.com/SaehwanPark/rkb-rust/blob/main/CHANGELOG.md>
+- <https://github.com/SaehwanPark/rkb-rs>
+- <https://saehwanpark.github.io/rkb-rs/>
+- <https://github.com/SaehwanPark/rkb-rs/blob/main/docs/PROJECT_DESCRIPTION.md>
+- <https://github.com/SaehwanPark/rkb-rs/blob/main/docs/USER_MANUAL.md>
+- <https://github.com/SaehwanPark/rkb-rs/blob/main/CHANGELOG.md>

@@ -1,23 +1,25 @@
-# RKB Rust
+# rkb-rs
 
-`rkb-rust` is the test-driven Rust rewrite of the ResDAC/CMS documentation
-knowledge base. It will preserve public documentation, derive traceable
-metadata, and expose citation-backed retrieval through one `rkb` executable.
+`rkb-rs` is the test-driven Rust rewrite of the ResDAC/CMS documentation
+knowledge base. It preserves public documentation, derives traceable metadata,
+and exposes citation-backed lexical and hybrid retrieval through one `rkb` executable.
 
-The repository currently contains verified rewrite slices through preservation,
-metadata extraction, parsing, variables, QA, lexical and hybrid retrieval,
-agent-context formatting, MCP serving/setup, retrieval evaluation, progress
-summaries, and downstream integration helpers.
+The repository provides end-to-end pipelines for preservation, metadata extraction,
+parsing and chunking, variable cataloging, automated QA, lexical and hybrid retrieval,
+agent-context generation, Model Context Protocol (MCP) serving/setup, benchmark evaluation,
+progress tracking, and downstream health-data integration.
+
+📖 **Documentation Portal**: [https://saehwanpark.github.io/rkb-rs/](https://saehwanpark.github.io/rkb-rs/)
 
 ## Install
 
 ```bash
-cargo install rkb-rust
-brew install SaehwanPark/tap/rkb-rust
+cargo install rkb-rs
+brew install SaehwanPark/tap/rkb-rs
 ```
 
-For a new-user overview with package-page-safe links, see
-[docs/PROJECT_DESCRIPTION.md](docs/PROJECT_DESCRIPTION.md). For release
+For comprehensive user guides, see the [Documentation Portal](https://saehwanpark.github.io/rkb-rs/)
+or [docs/PROJECT_DESCRIPTION.md](docs/PROJECT_DESCRIPTION.md). For release
 operations, see [docs/RELEASE.md](docs/RELEASE.md).
 
 ## Development

@@ -2,7 +2,7 @@
 
 ## Overview
 
-`rkb-rust` is organized as one library crate and one `rkb` binary. The binary
+`rkb-rs` is organized as one library crate and one `rkb` binary. The binary
 owns process concerns; library modules own typed domain transformations, retrieval
 formatting, evaluation reports, and thin side-effect adapters for preservation,
 extraction, parsing, variable metadata, provenance QA, lexical/hybrid retrieval,

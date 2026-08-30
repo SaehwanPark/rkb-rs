@@ -103,18 +103,20 @@ rkb search --query "BENE_ID"
 
 ```mermaid
 graph TD
-    A[ResDAC Web Source] -->|1. rkb inventory| B[manifests/site_inventory.csv<br/>Discovered URLs & Kind]
-    B -->|2. rkb archive| C[data/raw/<br/>Preserved HTML, PDF, XLSX]
-    C -->|archive_manifest.csv| D[3. rkb extract]
-    D -->|Datasets, Documents, Edges| E[data/metadata/ & data/graph/]
-    C -->|4. rkb parse| F[data/parsed/chunks.jsonl<br/>Sliding-window Text Segments]
-    F -->|5. rkb variables| G[Variable Catalogs & Containment]
-    E & F & G -->|6. rkb qa| H[Automated Provenance QA Verdict]
-    E & F & G -->|7. rkb index| I[(data/index/retrieval.sqlite)<br/>FTS5 + Optional Embeddings]
-    I -->|8. rkb search| J[Lexical & Hybrid Ranked Results]
-    I -->|9. rkb agent-context| K[Citation-Preserving LLM Context]
-    I -->|10. rkb mcp| L[MCP Tools for AI Assistants]
-    I -->|11. rkb integration| M[Downstream Cohort & Crosswalk Tools]
+    A["ResDAC Web Source"] -->|1. rkb inventory| B["manifests/site_inventory.csv<br/>(Discovered URLs & Kind)"]
+    B -->|2. rkb archive| C["data/raw/<br/>(Preserved HTML, PDF, XLSX)"]
+    C -->|archive_manifest.csv| D["3. rkb extract"]
+    D --> E["data/metadata/ & data/graph/<br/>(Datasets, Documents, Edges)"]
+    C -->|4. rkb parse| F["data/parsed/chunks.jsonl<br/>(Sliding-window Text Segments)"]
+    F --> G["data/metadata/variables.csv<br/>(Variable Catalogs & Containment)"]
+    E --> H["6. rkb qa<br/>(Automated Provenance QA)"]
+    F --> H
+    G --> H
+    H --> I[("data/index/retrieval.sqlite<br/>(FTS5 & Vector Index)")]
+    I --> J["8. rkb search<br/>(Lexical & Hybrid Ranked Results)"]
+    I --> K["9. rkb agent-context<br/>(Citation-Preserving LLM Context)"]
+    I --> L["10. rkb mcp<br/>(MCP Tools for AI Assistants)"]
+    I --> M["11. rkb integration<br/>(Downstream Research Tools)"]
 
     style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
     style B fill:#f1f5f9,stroke:#64748b,stroke-width:1px

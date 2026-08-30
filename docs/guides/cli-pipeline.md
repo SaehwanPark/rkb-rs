@@ -12,12 +12,12 @@ The `rkb-rs` data pipeline transforms live, unstructured public CMS documentatio
 
 ```mermaid
 flowchart LR
-    A[inventory] --> B[archive]
-    B --> C[extract]
-    C --> D[parse]
-    D --> E[variables]
-    E --> F[qa]
-    F --> G[index]
+    A["inventory"] --> B["archive"]
+    B --> C["extract"]
+    C --> D["parse"]
+    D --> E["variables"]
+    E --> F["qa"]
+    F --> G["index"]
 
     style A fill:#eff6ff,stroke:#2563eb
     style B fill:#eff6ff,stroke:#2563eb

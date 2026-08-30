@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reusable release helpers for rkb-rust.
+"""Reusable release helpers for rkb-rs.
 
 The helpers intentionally default to dry-run checks. Registry publication and
 tap updates remain controlled by GitHub Actions secrets and explicit tags.

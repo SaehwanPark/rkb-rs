@@ -1,18 +1,20 @@
-# RKB User Manual
+# rkb-rs User Manual
 
-Welcome to the User Manual for the **ResDAC Knowledge Base (RKB)** toolkit. This guide is written specifically for users with zero background in command-line tools or database management. By the end of this manual, you will know how to discover, download, extract, and parse CMS (Centers for Medicare & Medicaid Services) documentation into a local, search-ready data archive.
+Welcome to the User Manual for the **rkb-rs** toolkit. This guide is written for researchers, data analysts, and AI developers. By the end of this manual, you will know how to discover, download, extract, and parse CMS (Centers for Medicare & Medicaid Services) documentation into a local, search-ready data archive.
+
+📖 **Interactive Documentation Portal**: [https://saehwanpark.github.io/rkb-rs/](https://saehwanpark.github.io/rkb-rs/)
 
 ---
 
 ## Table of Contents
-1. [What is RKB?](#1-what-is-rkb)
+1. [What is rkb-rs?](#1-what-is-rkb-rs)
 2. [Key Concepts & Terminology](#2-key-concepts--terminology)
 3. [Visualizing the System](#3-visualizing-the-system)
 4. [Getting Started (Prerequisites & Installation)](#4-getting-started-prerequisites--installation)
 5. [Step-by-Step Tutorial (Zero to Chunks)](#5-step-by-step-tutorial-zero-to-chunks)
 6. [Detailed Command Reference](#6-detailed-command-reference)
 7. [Understanding Your Output Data](#7-understanding-your-output-data)
-8. [Roadmap (Future Commands)](#8-roadmap-future-commands)
+8. [Roadmap](#8-roadmap)
 9. [Troubleshooting Guide](#9-troubleshooting-guide)
 
 ---

@@ -1,13 +1,13 @@
 [package]
-name = "rkb-rust"
+name = "rkb-rs"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.96"
 description = "Rust rewrite of the ResDAC/CMS documentation knowledge base"
 license = "MIT"
-repository = "https://github.com/SaehwanPark/rkb-rust"
-homepage = "https://github.com/SaehwanPark/rkb-rust"
-documentation = "https://github.com/SaehwanPark/rkb-rust/blob/main/docs/USER_MANUAL.md"
+repository = "https://github.com/SaehwanPark/rkb-rs"
+homepage = "https://github.com/SaehwanPark/rkb-rs"
+documentation = "https://saehwanpark.github.io/rkb-rs/"
 readme = "docs/PROJECT_DESCRIPTION.md"
 keywords = ["cms", "resdac", "retrieval", "archive", "cli"]
 categories = ["command-line-utilities", "science"]

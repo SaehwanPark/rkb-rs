@@ -176,7 +176,7 @@ Verification:
 
 Status: Active
 
-Prepare crates.io and Homebrew distribution for the `rkb-rust` package and `rkb`
+Prepare crates.io and Homebrew distribution for the `rkb-rs` package and `rkb`
 binary with package-page documentation, reusable release scripts, and tag-driven
 automation.
 

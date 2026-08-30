@@ -1472,7 +1472,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rkb-rust"
+name = "rkb-rs"
 version = "0.1.0"
 dependencies = [
  "chrono",

@@ -18,6 +18,8 @@ All notable changes are recorded here using a simplified Keep a Changelog format
 
 ### Added
 
+- Interactive GitHub Pages documentation portal with Jekyll layout, Mermaid diagram support, responsive sidebar, and comprehensive guides for installation, quickstart, CLI pipelines, search/agent-context, MCP server integration, downstream utilities, and troubleshooting.
+- Automated GitHub Actions deployment workflow for GitHub Pages (`.github/workflows/pages.yml`).
 - crates.io/Homebrew release preparation with package metadata, a package-page
   project description, a release runbook, reusable `release.toml`-driven
   scripts, and tag-driven GitHub release automation.
